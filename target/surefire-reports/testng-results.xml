@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.qa.hubspotapp.test.LoginPageTest" duration-ms="31627" started-at="2020-06-05T10:55:38Z" finished-at="2020-06-05T10:56:10Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="31627" started-at="2020-06-05T10:55:38Z" finished-at="2020-06-05T10:56:10Z">
+      <class name="com.qa.hubspotapp.test.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspotapp.test.LoginPageTest@3567135c]" name="setUp" is-config="true" duration-ms="7563" started-at="2020-06-05T10:55:38Z" finished-at="2020-06-05T10:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="hubSpotPageLoginPageTitle()[pri:1, instance:com.qa.hubspotapp.test.LoginPageTest@3567135c]" name="hubSpotPageLoginPageTitle" duration-ms="10032" started-at="2020-06-05T10:55:46Z" finished-at="2020-06-05T10:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hubSpotPageLoginPageTitle -->
+        <test-method status="PASS" signature="hubSpotSignUpLink_IsPrfesent()[pri:2, instance:com.qa.hubspotapp.test.LoginPageTest@3567135c]" name="hubSpotSignUpLink_IsPrfesent" duration-ms="2061" started-at="2020-06-05T10:55:56Z" finished-at="2020-06-05T10:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hubSpotSignUpLink_IsPrfesent -->
+        <test-method status="PASS" signature="hubSpotLogin()[pri:3, instance:com.qa.hubspotapp.test.LoginPageTest@3567135c]" name="hubSpotLogin" duration-ms="11666" started-at="2020-06-05T10:55:58Z" finished-at="2020-06-05T10:56:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hubSpotLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspotapp.test.LoginPageTest@3567135c]" name="tearDown" is-config="true" duration-ms="241" started-at="2020-06-05T10:56:09Z" finished-at="2020-06-05T10:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspotapp.test.LoginPageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.qa.hubspotapp.test.LoginPageTest -->
+</testng-results>
