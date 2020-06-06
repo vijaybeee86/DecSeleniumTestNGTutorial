@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Hub Spot Regression Test Suite" thread-count= "2" parallel = "tests" >
+
+	<listeners>
+	    <listener class-name="com.qa.hubspotapp.listneres.ExtentReportListener" />
+	</listeners>    
+    
+  <test name="Regression Login Test - firefox" thread-count= "2" parallel = "classes" >
+      <parameter  name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.qa.hubspotapp.test.LoginPageTest" />
+<!--        <class name="com.qa.hubspotapp.test.HomePageTest" /> -->
+   </classes>
+  </test>
+  
+    <test name="Regression Login Test - chrome" thread-count= "2" parallel = "classes" >
+        <parameter  name = "browser" value = "chrome" />
+    <classes>
+<!--        <class name="com.qa.hubspotapp.test.LoginPageTest" /> -->
+       <class name="com.qa.hubspotapp.test.HomePageTest" />
+   </classes>
+  </test>
+  
+</suite>

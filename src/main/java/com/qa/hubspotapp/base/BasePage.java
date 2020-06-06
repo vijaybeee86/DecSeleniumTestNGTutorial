@@ -107,6 +107,7 @@ public class BasePage {
 	
 	public String getScreenshot()
 	{
+	
 		File src = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		//String path = System.getProperty("user.dir")+ "/TestScreenshots" + System.currentTimeMillis() + ".png";
 		String path = "C:/Users/Krithik/TestNGNewFramework/SeleniumAutomation/TestScreenshots/"+System.currentTimeMillis()+".png";
