@@ -36,8 +36,7 @@ public LoginPage(WebDriver driver)
 }
 
 
-/**************************** Page Actions/Methods present in Login Page 
- * @return ****************************/
+/**************************** Page Actions/Methods present in Login Page ****************************/
 
 /*public String getLoginPageTitle()
 {
