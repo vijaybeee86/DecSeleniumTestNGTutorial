@@ -9,6 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.utilities.AppConstants;
@@ -31,22 +32,26 @@ public class ContactsPageTest {
 	
 	
 	@BeforeMethod
-	public void setUp()
+	@Parameters(value={"browser"})
+	public void setUp(String browser)
 	{
-		basePage = new BasePage();
-		prop = basePage.init_properties();
-		driver = basePage.init_driver(prop.getProperty("browser"));
-		driver.get(prop.getProperty("url"));
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		loginPage = new LoginPage(driver);
-		userCredent = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
-		homePage = loginPage.doLogin(userCredent);
-		contactsPage = homePage.goToContactsPage();
+		 String browserName = null;
+		 basePage = new BasePage();
+		 prop = basePage.init_properties();
+		 if(browser.equals(null))
+		 {
+			 browserName = prop.getProperty("browser");
+		 }
+		 else
+		 {
+			 browserName = browser;
+		 }
+		 driver = basePage.init_driver(browserName);
+		 driver.get(prop.getProperty("url"));
+		 loginPage = new LoginPage(driver);
+		 userCredent = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
+		 homePage = loginPage.doLogin(userCredent);
+		 contactsPage = homePage.goToContactsPage();
 		 System.out.println("Start Executing Contacts Page test cases");
 	}
 	

@@ -2,12 +2,12 @@
   
 <suite name="Hub Spot Sanity Test Suite" verbose="1" >
 
-<!-- 	<listeners> -->
-<!-- 	    <listener class-name="com.qa.hubspotapp.listneres.ExtentReportListener" /> -->
-<!-- 	</listeners>     -->
+	<listeners>
+	    <listener class-name="com.qa.hubspotapp.listneres.ExtentReportListener" />
+	</listeners>    
     
-  <test name="Sanity Test" >
-      
+  <test name="Sanity Test in Chrome browser" >
+      <parameter  name = "browser" value = "chrome" />
     <classes>
        <class name="com.qa.hubspotapp.test.LoginPageTest" />
 <!--        <class name="com.qa.hubspotapp.test.HomePageTest" /> -->
